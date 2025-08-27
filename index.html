@@ -1,24 +1,275 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 1 5to Primaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1: ¡El Comienzo de tu Aventura como Inventor!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Resumen de la Sesión</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li><strong>Conceptual:</strong> El alumno comprenderá la visión de Gnius Club: pasar de ser un consumidor de tecnología a un creador de soluciones con propósito.</li>
+                                        <li><strong>Procedimental:</strong> El alumno reconocerá el hardware principal que utilizará durante el año (Kit Nezha Pro Sports) y creará exitosamente una cuenta personal en la plataforma MakeCode para guardar sus proyectos en la nube.</li>
+                                        <li><strong>Actitudinal:</strong> El alumno se sentirá inspirado y motivado para comenzar su viaje de aprendizaje en robótica e inteligencia artificial.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Misión Launch:</strong> ¡El Comienzo de tu Aventura como Inventor!</li>
+                                        <li><strong class="tactic-highlight">⚡Briefing:</strong> Tu Arsenal de Innovación: ¡Conoce el Nezha Kit!</li>
+                                        <li><strong class="tactic-highlight">⚡Challenge:</strong> Tu Pasaporte de Creador: Cuenta de MakeCode.</li>
+                                        <li><strong class="tactic-highlight">⚡Landing:</strong> Próximo Despegue.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Cuenta personal creada exitosamente en la plataforma MakeCode.</li>
+                                        <li>Un primer proyecto vacío guardado en la cuenta con el nombre "Mi Aventura Gnius".</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Computadoras o tabletas para cada estudiante.</li>
+                                        <li>Un Kit Nezha Pro Sports para la demostración del facilitador.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-8).</li>
+                                        <li>Enlace directo a <a href="https://makecode.microbit.org/" target="_blank">makecode.microbit.org</a>.</li>
+                                    </ul>
+                                    <strong>Preparación Previa del Facilitador:</strong>
+                                    <ol>
+                                        <li><strong>Revisión Técnica:</strong> Verifica que el enlace a MakeCode funcione y que todas las computadoras de los estudiantes tengan acceso a internet.</li>
+                                        <li><strong>Preparación Física:</strong> Ten el Kit Nezha Pro Sports a la mano, idealmente fuera de su caja y con algunas piezas clave separadas para mostrarlas fácilmente (un motor, un servo, el micro:bit, la A.I. Lens).</li>
+                                        <li><strong>Cuenta de Ejemplo:</strong> Crea una cuenta de MakeCode de ejemplo para poder guiar el proceso en vivo, proyectando tu pantalla.</li>
+                                        <li><strong>Familiarización:</strong> Lee todos los diálogos y asegúrate de entender el flujo y los tiempos de la sesión.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Misión Launch - ¡El Comienzo de tu Aventura como Inventor! ⏰ 10 minutos</h2>
+                <p>Inspirar a los estudiantes con la filosofía Gnius y establecer los objetivos del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Inspiración ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2: Logo de Gnius Club con un fondo dinámico).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, genios, y bienvenidos a su primera misión en Gnius Club! Levanten la mano, ¿a quién le gustan los videojuegos? ¿A quién le gusta ver videos de robots increíbles? ¡Genial! La mayoría de nosotros pasamos mucho tiempo usando tecnología, ¿verdad? Jugamos, vemos videos, usamos aplicaciones. Eso es increíble, pero hoy, todo eso va a cambiar. En Gnius Club, no vinimos solo a *usar* tecnología. Vinimos a *crearla*. Van a pasar de ser los jugadores a ser los diseñadores del juego. Van a dejar de ver videos de robots para empezar a construir y programar sus propios robots. Este año, van a descubrir que tienen el poder no solo de imaginar el futuro, sino de construir un pedacito de él. ¿Están listos para convertirse en inventores, en arquitectos de sus propias ideas?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ritual Gnius ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3: Animación del ritual "Gracias por Asistir").</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Como en todo gran equipo, tenemos nuestros rituales para empezar con la mejor energía. Este es el nuestro. Nos ayuda a recordar que estamos aquí para aprender, para apoyarnos y para agradecer la oportunidad de crear juntos. Por favor, pónganse de pie un momento. Vamos a juntar nuestras manos así, y diremos juntos con energía: ¡Gracias por asistir!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Objetivos de la Misión de Hoy ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4: "Misión de Hoy" con tres iconos claros).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto, equipo. Nuestra primera misión de hoy es muy importante y tiene tres objetivos principales. Primero <strong>(señalar icono 1 - un kit de herramientas)</strong>, vamos a conocer el increíble kit de robótica con el que construiremos nuestras creaciones este año. Segundo <strong>(señalar icono 2 - un pasaporte o una llave)</strong>, cada uno de ustedes creará su 'Pasaporte de Creador', que es una cuenta personal para que todas sus ideas y proyectos se guarden en un lugar seguro. Y tercero <strong>(señalar icono 3 - un cohete despegando)</strong>, nos prepararemos para nuestro próximo despegue, descubriendo lo que nos espera en la siguiente misión. ¡Será un día fundamental para toda nuestra aventura!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Briefing - Tu Arsenal de Innovación: ¡Conoce el Nezha Kit! ⏰ 10 minutos</h2>
+                <p>Presentar el hardware que usarán, generando emoción y entendimiento sobre sus componentes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Revelación del Kit ⏰ 5 minutos</h3>
+                            <p>(Facilitador toma el Kit Nezha Pro Sports físicamente. No hay diapositiva, toda la atención está en el objeto real).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, genios. Para crear, necesitamos herramientas. Y este año, su principal herramienta de innovación será esta maravilla: el <strong>Nezha Pro Sports Kit</strong>. Esto no es un juguete común. Esto es un kit de ingeniería robótica. Dentro de esta caja está todo lo que necesitan para construir robots que se mueven, que sienten y que hasta pueden tomar decisiones.
+                                Miren bien... <strong>(mostrar las piezas)</strong>. Aquí tenemos los <strong>motores</strong>, que son como los músculos de nuestro robot, ¡le darán la fuerza para moverse! Estos otros son <strong>servomotores</strong>, son como músculos más precisos, para mover un brazo o una palanca a un ángulo exacto. Tenemos sensores, que son los 'sentidos' de nuestro robot. Y lo más importante, el cerebro de todo esto será nuestro viejo amigo, el <strong>micro:bit</strong>, que ya conocen.
+                                Y finalmente... <strong>(sostener la Smart A.I. Lens)</strong> ... esta es la pieza más especial. Es la <strong>Smart A.I. Lens</strong>. Es una cámara con un cerebro de Inteligencia Artificial adentro. ¡Son los ojos inteligentes de nuestro robot! Con esto, podrá reconocer colores, objetos y hasta personas. ¡Impresionante, verdad?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Inspiración en Video ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5: Video dinámico mostrando robots hechos con el Kit Nezha en acción: pateando una pelota, recogiendo un objeto, siguiendo una línea).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, para que vean el poder real de este kit, quiero que vean lo que ustedes mismos serán capaces de construir. Pongan mucha atención a la pantalla. <strong>(Reproducir video)</strong>. ¿Vieron eso? Robots que juegan, que clasifican, que interactúan con su entorno. Cada uno de esos robots fue construido con las mismas piezas que les acabo de mostrar. Esa es la meta. Ese es el poder que tendrán en sus manos. Están a punto de aprender el lenguaje para darle vida a estas piezas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge - Tu Pasaporte de Creador: Cuenta de MakeCode ⏰ 20 minutos</h2>
+                <p>Guiar a todos los estudiantes para que creen exitosamente su cuenta en MakeCode.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: ¿Por Qué Necesitamos una Cuenta? ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 6: Icono de una nube con proyectos adentro y el logo de MakeCode).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Perfecto, equipo! Ahora viene una de las partes más importantes del día. Imaginen que son artistas y cada obra que crean es valiosísima. ¿La dejarían tirada por ahí? ¡Claro que no! La guardarían en un lugar seguro. Con el código que ustedes van a escribir, es exactamente lo mismo. Cada programa es una de sus creaciones. Para no perderlas nunca y poder acceder a ellas desde cualquier computadora, necesitan su propio portafolio digital. Ese portafolio se crea con una cuenta en <strong>MakeCode</strong>. Al tener una cuenta, todos sus proyectos se guardan en 'la nube', que es como su mochila digital y secreta en internet. Así, nunca más tendrán que preocuparse por perder su trabajo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Creación de Cuenta - Paso a Paso ⏰ 15 minutos</h3>
+                            <p>(El facilitador proyecta su propia pantalla y guía el proceso en vivo. Los estudiantes siguen en sus dispositivos. Proyectar Diapositiva 7 con las instrucciones resumidas).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, todos a sus computadoras. Abran su navegador y vamos a ir a la página <strong>makecode.microbit.org</strong>. <strong>(Esperar a que todos estén allí)</strong>.
+                                <br><strong>Paso 1:</strong> En la esquina superior derecha, verán un botón que dice 'Sign In'. Por favor, hagan clic ahí.
+                                <br><strong>Paso 2:</strong> Les aparecerán varias opciones. Como es nuestra primera vez, vamos a buscar la opción que dice 'Create Account'.
+                                <br><strong>Paso 3:</strong> La plataforma nos pedirá usar una cuenta de Microsoft, Google o alguna otra. Usaremos la de la escuela (o la opción que se haya decidido). Hagan clic en la opción correspondiente. <strong>(El facilitador guía según la opción elegida por el colegio)</strong>.
+                                <br><strong>Paso 4:</strong> Sigan los pasos que les pide la pantalla. Es posible que tengan que poner su correo de la escuela y crear una contraseña. ¡OJO! Elijan una contraseña que puedan recordar, pero que sea segura. ¡Anótenla en un lugar secreto que solo ustedes conozcan!
+                                <br><strong>(El facilitador camina por el salón, ayudando a los estudiantes que tengan problemas. Esta parte requiere paciencia y apoyo individual).</strong>
+                                <br>Una vez que terminen, la página los debería regresar a MakeCode, y ahora, en la esquina superior derecha, ¡debería aparecer su inicial o su nombre! ¡Eso significa que lo lograron!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: ¡Tu Primer Proyecto Guardado! ⏰ 2 minutos</h3>
+                            <p>Los estudiantes realizan la prueba final para confirmar que su cuenta funciona y guarda proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente trabajo, inventores! Ahora que tienen su cuenta, vamos a hacer la prueba final. Hagan clic en el botón grande que dice '+ Nuevo Proyecto'. Pónganle de nombre 'Mi Aventura Gnius'. Ahora, sin agregar ningún bloque, vuelvan a la página de inicio haciendo clic en el botón de la casita. Deberían ver su nuevo proyecto guardado en la sección 'Mis Proyectos'. ¿Lo ven? ¡Felicidades! Acaban de crear su portafolio digital. ¡Su primer paso oficial como creadores de tecnología está completo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Landing - Próximo Despegue ⏰ 5 minutos</h2>
+                <p>Recapitular los logros de la sesión y generar anticipación para la siguiente.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recapitulación y Celebración ⏰ 2 minutos</h3>
+                            <p>El facilitador resume los logros clave de la sesión para reforzar el sentido de progreso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genial trabajo el día de hoy, equipo! Miren todo lo que logramos: descubrimos la increíble misión de Gnius Club, conocimos el poderoso Kit Nezha con el que construiremos robots asombrosos, y lo más importante, cada uno de ustedes ya tiene su 'Pasaporte de Creador' listo para guardar todas las ideas geniales que tendrán este año. ¡Dénse un fuerte aplauso!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Avance de la Próxima Misión ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 8: Una imagen misteriosa de un ajolote (Xolo) y siluetas de perfiles de aprendizaje).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Pero esto es solo el comienzo. La próxima vez, no estarán solos en su aventura. Conocerán a alguien que cambiará por completo la forma en que aprenden y crean. Se llama <strong>Xolo</strong>, y es su copiloto personal de Inteligencia Artificial. Para que Xolo pueda ser el mejor ayudante para cada uno de ustedes, primero tendrá que conocerlos. Descubriremos juntos cuáles son sus superpoderes secretos de aprendizaje. ¡No se lo pueden perder! Nos vemos en la próxima misión, inventores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
